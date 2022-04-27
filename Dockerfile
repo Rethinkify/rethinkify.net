@@ -2,8 +2,7 @@ FROM ubuntu:latest
 
 # Install packages
 RUN apt-get update \
-    && apt-get upgrade \
-    && apt-get install \
+    && apt-get install -y \
     nginx \
     && rm -rf /var/lib/apt/lists/
 
